@@ -1,10 +1,14 @@
 BoxLayout:
     orientation:"vertical"
-	Button:
-		text:"LoL"
-		on_release:app.berechne(self,root,app)
+	BoxLayout:
+	    Button:
+		    text:"LoL"
+		    on_release:app.berechne(self,root,app)
+	    Button:
+		    text:"Guildwars"
+		    on_release:app.guilde(self,root,app)
 	Label:
-		text:"Hallo"
+        text:"Hallo"
 	Button:
 		text:"Discord"
 		on_release:app.discorde(self,root,app)
