@@ -1,17 +1,26 @@
+<button>:
+    on_press:app.button_pressed(self)
+    background_color:(2,1,1,1)
+
 BoxLayout:
     orientation:"vertical"
 	BoxLayout:
 	    Button:
 		    text:"LoL"
-		    on_release:app.berechne(self,root,app)
+		    on_release:app.league(self,root,app)
 	    Button:
-		    text:"Guildwars"
+		    text:"Guild Wars 2"
 		    on_release:app.guilde(self,root,app)
 	Label:
-        text:"Hallo"
-	Button:
-		text:"Discord"
-		on_release:app.discorde(self,root,app)
+	    id: outputLabel
+        text:"Willkommen"
+	BoxLayout:
+	    Button:
+		    text:"Discord"
+		    on_release:app.discorde(self,root,app)
+		Button:
+		    text:"Leertaste"
+
 	GridLayout:
 	    cols: 2
         Button:
